@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+.description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  color: #777;
+  margin-top: 5vh;
+}
+
+.heading_1 {
+  font-size: 2rem;
+  font-weight: 200;
+  margin: 0;
+}
+
+.heading_2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.description .insight {
+  text-align: center;
+  width: 50ch;
+  font-size: 0.9rem;
+  font-weight: 400;
+  opacity: 0.7;
+}
+.grid-details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+}
+.block {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+  height: 12rem;
+}
+.block img {
+  margin-left: 20rem;
+}
+.block-supervisor {
+  border-top: 5px solid hsl(180, 62%, 55%);
+  grid-row: 2;
+}
+.block-team-builder {
+  border-top: 5px solid hsl(0, 78%, 62%);
+  grid-column: 2;
+}
+.block-karma {
+  border-top: 5px solid hsl(34, 97%, 64%);
+  grid-column: 2;
+  grid-row: 3;
+}
+.block-calculator {
+  border-top: 5px solid hsl(212, 86%, 64%);
+  grid-column: 3;
+  grid-row: 2;
+}
