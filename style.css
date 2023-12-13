@@ -68,7 +68,7 @@
   grid-row: 2;
   /* margin-right: 10rem; */
 }
-@media (width<=90rem) {
+@media (width<=720px) {
   .description{
     text-align: center;
   }
