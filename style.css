@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
 
+.container{
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
 .description {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   font-family: "Poppins", sans-serif;
   color: #777;
   margin-top: 5vh;
@@ -34,21 +35,23 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   gap: 10px;
+  place-items: center;
 }
 .block {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
-  height: 12rem;
-  padding-right: 3rem;
-  padding-left: 3rem;
-  position: relative;
+  min-height: 15rem;
+  width: 15rem;
+  text-align: left;
+  padding-inline: 3rem;
 }
 .block img {
-  position: absolute;
-  left: 20rem;
+  margin-block-start:2.5rem;
+  margin-inline-start: 11rem;
 }
 .block-supervisor {
   border-top: 5px solid hsl(180, 62%, 55%);
   grid-row: 2;
+  /* margin-left: 10rem; */
 }
 .block-team-builder {
   border-top: 5px solid hsl(0, 78%, 62%);
@@ -63,28 +66,33 @@
   border-top: 5px solid hsl(212, 86%, 64%);
   grid-column: 3;
   grid-row: 2;
+  /* margin-right: 10rem; */
 }
 @media (width<=375px) {
+  .description{
+    text-align: center;
+  }
   .grid-details {
     display: grid;
     grid-template-columns: repeat(1, 100%);
     grid-template-rows: repeat(4, 1fr);
+    place-items: center;
   }
   
   .block-supervisor {
-    grid-column: span 5;
+    grid-column: 1;
     grid-row: 1;
   }
   .block-team-builder {
-    grid-column: span 5;
+    grid-column: 1;
     grid-row: 2;
   }
   .block-karma {
-    grid-column: span 5;
+    grid-column: 1;
     grid-row: 3;
   }
   .block-calculator {
-    grid-column: span 5;
+    grid-column: 1;
     grid-row: 4;
   }
 }
